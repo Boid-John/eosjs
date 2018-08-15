@@ -474,7 +474,7 @@ processedTransaction = await eos.pushTransaction(transferTransaction)
 ```js
 // more on the contract / transaction syntax
 
-await eos.transaction('myaccount', myaccount => {
+await eos.contract('myaccount', myaccount => {
 
   // Create the initial token with its max supply
   // const options = {authorization: 'myaccount'} // default
